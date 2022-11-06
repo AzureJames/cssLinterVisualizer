@@ -94,22 +94,23 @@ const sankeyData = [
   ['A', 'Border', 1],
   ['Header', 'Border', 1],
 
-  ['Line-height', 'Typography', 2],
-  ['Font-family', 'Typography', 2],
-  ['Font-size', 'Typography', 2],
-  ['Text-align', 'Typography', 2],
-  ['Background-color', 'Backgrounds', 2],
-  ['Background', 'Backgrounds', 2],
-  ['Height', 'Sizing', 2],
-  ['Width', 'Sizing', 2],
-  ['Margin', 'Margin & Padding', 2],
-  ['Padding', 'Margin & Padding', 2],
-  ['Gap', 'Margin & Padding', 2],
-  ['Border', 'Borders', 2],
+  ['Line-height', 'Typography', 10],
+  ['Font-family', 'Typography', 10],
+  ['Font-size', 'Typography', 12],
+  ['Text-align', 'Typography', 10],
+  ['Background-color', 'Backgrounds', 5],
+  ['Background-color', 'Color', 5],
+  ['Background', 'Backgrounds', 1],
+  ['Height', 'Sizing', 5],
+  ['Width', 'Sizing', 5],
+  ['Margin', 'Margin & Padding', 8],
+  ['Padding', 'Margin & Padding', 8],
+  ['Gap', 'Margin & Padding', 10],
+  ['Border', 'Borders', 4],
   ['Border-radius', 'Borders', 2],
   ['Display-block', 'Display', 2],
-  ['Display-flex', 'Display', 2],
-  ['Overflow', 'Display', 2]
+  ['Display-flex', 'Display', 8],
+  ['Overflow', 'Display', 1]
 ];
 class SankeyChart extends Component {
   render() {
