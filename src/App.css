@@ -81,6 +81,7 @@ body {
 
 h1, h2, h3 {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(15, 14, 15);
 }
 
 p, li, a,
@@ -177,7 +178,7 @@ form button:active{
 
 
 textarea {
-  border-radius: 3px;
+  border-radius: 4px;
 }
 
 
