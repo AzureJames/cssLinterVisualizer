@@ -1,5 +1,22 @@
 import React, { Component } from 'react'
 import Chart from 'react-google-charts'
+
+let colors = ['#a6cee3', '#b2df8a', '#fb9a99', '#fdbf6f',
+'#cab2d6', '#ffff99', '#1f78b4', '#33a02c'];
+
+var options = {
+height: 900,
+sankey: {
+node: {
+colors: colors
+},
+link: {
+colorMode: 'gradient',
+colors: colors
+}
+}
+};
+
 const sankeyData = [
   ['From', 'To', 'Weight'],
 
@@ -102,10 +119,11 @@ class SankeyChart extends Component {
         <Chart
           chartType="Sankey"
           width="100%"
-          height="900px"
+        //   height="900px"
+          color="black"
           loader={<div>Loading Chart</div>}
           data={sankeyData}
-          options={ {} }
+          options={options}
           rootProps={{ 'data-testid': '1' }}
         />
       </div>

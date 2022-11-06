@@ -73,8 +73,8 @@ think of every part of the site as a fluid component, not tablet pc etc.
 
 /*body*/
 body {
-  background: rgb(25,28,117);
-  background: linear-gradient(90deg, rgba(25,28,117,0.6139589624912465) 0%, rgba(72,99,247,0.6279645647321428) 50%, rgba(248,68,55,0.5523343126313025) 100%); 
+  background: rgb(15, 17, 70);
+  background: linear-gradient(90deg, rgba(14, 15, 64, 0.614) 0%, rgba(72,99,247,0.6279645647321428) 50%, rgba(248,68,55,0.5523343126313025) 100%); 
 }
 
 /*typography*/
@@ -82,7 +82,9 @@ body {
 h1, h2, h3 {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: rgb(15, 14, 15);
+  text-shadow: 2px 2px powderblue;
 }
+
 
 p, li, a,
 address,
@@ -93,6 +95,12 @@ figcaption {
 
 h1 {
   font-size: 2rem;
+}
+
+h2 {
+  color: white;
+  text-shadow: 1px 1px blue;
+  padding-top: 1rem;
 }
 
 
@@ -126,20 +134,29 @@ form > * {
 }
 
 form button {
-  padding: .5rem;
-  background-color: lightblue;
+  padding: .6rem;
+  background-color: rgb(185, 227, 240);
+  border: none;
   border-radius: 1rem;
   font-size: 1.3rem;
 }
 
 form button:hover,
 form button:active{
-  background-color: rgb(193, 230, 242);
+  background-color: rgb(209, 239, 249);
   font-size: 1.25rem;
 }
 
 .css-chart {
-  background-color: #fff;
+  background-color: black;
+}
+
+.css-chart text {
+  color: white;
+  stroke: white;
+  fill: white;
+  font-size: 1rem;
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
 }
 
 
