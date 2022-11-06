@@ -36,3 +36,122 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+
+
+
+
+
+
+
+/* use % for layouts. 
+validate html and css. 
+optimize imgs & code at end & remove css commemts
+google fonts is fast
+C R A P
+:focus
+img alt
+meta author & description
+lazy loading for later imgs
+iphone 5 / 320 px minimum - infinity
+sr-only
+lighthouse audit
+Test sites with other people (designer blinders)
+you can fluidly chg site width in dev tools
+think of every part of the site as a fluid component, not tablet pc etc. 
+
+@media only screen and (min-width: 600px) {
+
+}
+
+*/
+
+
+
+
+/*body*/
+body {
+  background: rgb(25,28,117);
+  background: linear-gradient(90deg, rgba(25,28,117,0.6139589624912465) 0%, rgba(72,99,247,0.6279645647321428) 50%, rgba(248,68,55,0.5523343126313025) 100%); 
+}
+
+/*typography*/
+
+h1, h2, h3 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p, li, a,
+address,
+figcaption {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(61, 61, 61);
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+
+/*header*/
+
+/*main content*/
+
+.main-container {
+  max-width: 1500px;
+  padding: .5rem;
+  margin: 0 auto;
+}
+
+section,
+header h1,
+header figcaption,
+header address,
+header p {
+  padding: .5rem;
+}
+
+form > * {
+  display: block;
+}
+
+.css-chart {
+  background-color: #fff;
+}
+
+
+
+.node rect {
+  cursor: move;
+  fill-opacity: .9;
+  shape-rendering: crispEdges;
+}
+ 
+.node text {
+  pointer-events: none;
+  text-shadow: 0 1px 0 #fff;
+}
+ 
+.link {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .2;
+}
+ 
+.link:hover {
+  stroke-opacity: .5;
+}
+
+.chart-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  min-height: 1000px;
+}
+
+
+
+
+
+/*footer*/
