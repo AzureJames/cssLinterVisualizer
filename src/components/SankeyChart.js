@@ -18,10 +18,24 @@ const sankeyData = [
   ['A', 'Display-flex', .2],
   ['Footer', 'Border-radius', .2],
   ['P', 'Overflow', .2],
-  ['P', 'Display-inline-block', .2],
-  ['P', 'Display-block', .2],
+
+
+  ['Line-height', 'Typography', .2],
+  ['Font-family', 'Typography', .2],
+  ['Font-size', 'Typography', .2],
+  ['Text-align', 'Typography', .2],
+  ['Background-color', 'Backgrounds', .2],
+  ['Background', 'Backgrounds   ', .2],
+  ['Height', 'Sizing', .2],
+  ['Width', 'Sizing', .2],
+  ['Margin', 'Margin & Padding', .2],
+  ['Padding', 'Margin & Padding', .2],
+  ['Gap', 'Margin & Padding', .2],
+  ['Border', 'Borders', .2],
+  ['Border-radius', 'Borders', .2],
   ['Display-block', 'Display', .2],
-  ['Display-flex', 'Display', .2]
+  ['Display-flex', 'Display', .2],
+  ['Overflow', 'Display', .2]
 ];
 class SankeyChart extends Component {
   render() {
