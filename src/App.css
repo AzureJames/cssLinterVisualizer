@@ -113,8 +113,28 @@ header p {
   padding: .5rem;
 }
 
+form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
 form > * {
   display: block;
+}
+
+form button {
+  padding: .5rem;
+  background-color: lightblue;
+  border-radius: 1rem;
+  font-size: 1.3rem;
+}
+
+form button:hover,
+form button:active{
+  background-color: rgb(193, 230, 242);
+  font-size: 1.25rem;
 }
 
 .css-chart {
@@ -156,7 +176,9 @@ form > * {
 }
 
 
-
+textarea {
+  border-radius: 3px;
+}
 
 
 /*footer*/
