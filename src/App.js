@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import {useState, reactDOM} from 'react';
+import {useState} from 'react';
 import SankeyChart from './components/SankeyChart';
 
 function App() {
@@ -9,11 +9,19 @@ function App() {
   const [inputCss, setInputCss] = useState(" ");
   const [outputCss, setOutputCss] = useState(" ");
   const [outputCssMini, setOutputCssMini] = useState(" ");
+  let inputProcessed = "";
+  let inputProcessedMini = "";
 
   let processCss = () => {
     console.log(inputCss, outputCss, outputCssMini);
-    setOutputCss(inputCss);
-    setOutputCssMini(inputCss);
+
+    inputProcessed = inputCss;
+
+    setOutputCss(inputProcessed);
+
+    inputProcessedMini = inputCss.replace(/\s/g,'');
+    
+    setOutputCssMini(inputProcessedMini);
 
   }
 
