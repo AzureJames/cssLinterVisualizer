@@ -119,6 +119,7 @@ let rulesArray = [
     <div className="App">
         <div className="main-container">
             <h1>CSS Linter and Visualizer</h1>
+            <h2>Lint and Minimize</h2>
             <div className="container">
               <form action="" method="POST">
                   <label htmlFor="input_css">Input CSS</label>
