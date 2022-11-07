@@ -48,49 +48,49 @@ function App() {
 
 
 
-  let selectorsArray = [
-"header",
-"nav",
-"h1",
-"h2",
-"h3",
-"p",
-"div",
-"article",
-"img",
-"picture",
-"ol",
-"ul",
-"li",
-"a" ]
+//   let selectorsArray = [
+// "header",
+// "nav",
+// "h1",
+// "h2",
+// "h3",
+// "p",
+// "div",
+// "article",
+// "img",
+// "picture",
+// "ol",
+// "ul",
+// "li",
+// "a" ]
 
 
-let rulesArray = [
-"line-height",
-"font-family",
-"font-size",
-"text-align",
-"color",
-"background-color",
-"background",
-"height",
-"width",
-"margin",
-"padding",
-"gap",
-"border",
-"display-flex" ]
+// let rulesArray = [
+// "line-height",
+// "font-family",
+// "font-size",
+// "text-align",
+// "color",
+// "background-color",
+// "background",
+// "height",
+// "width",
+// "margin",
+// "padding",
+// "gap",
+// "border",
+// "display-flex" ]
 
-  let rulesetsArray = [
-    "Display",
-    "Typography"
-  ]
+//   let rulesetsArray = [
+//     "Display",
+//     "Typography"
+//   ]
 
 
   const [inputCss, setInputCss] = useState(" ");
-  const [outputCss, setOutputCss] = useState(" ");
+  // const [outputCss, setOutputCss] = useState(" ");
   const [outputCssMini, setOutputCssMini] = useState(" ");
-  let inputProcessed = "";
+  // let inputProcessed = "";
   let inputProcessedMini = "";
 
 
@@ -101,11 +101,11 @@ let rulesArray = [
 
 
   let processCss = () => {
-    console.log(inputCss, outputCss, outputCssMini);
+    console.log(inputCss, outputCssMini);
 
-    inputProcessed = inputCss;
+    // inputProcessed = inputCss;
 
-    setOutputCss(inputProcessed);
+    // setOutputCss(inputProcessed);
 
     inputProcessedMini = inputCss.replace(/\s/g,'');
     
@@ -125,10 +125,10 @@ let rulesArray = [
                   <label htmlFor="input_css">Input CSS</label>
                   <textarea name="input_css" id="input_css" cols="160" rows="15" onChange={(input) => {setInputCss(input.target.value); console.log(input.target.value)} } value={inputCss}></textarea>
                   <button type="button" id="submitCSS" onClick={() => processCss()}>Process CSS</button>
-                  <label htmlFor="output_css">Output CSS</label>
-                  <textarea name="output_css" id="output_css" cols="160" rows="15"  onChange={(input) => setOutputCss(input.value)} value={outputCss}></textarea>
+                  {/* <label htmlFor="output_css">Output CSS</label>
+                  <textarea name="output_css" id="output_css" cols="160" rows="15"  onChange={(input) => setOutputCss(input.value)} value={outputCss}></textarea> */}
                   <label htmlFor="output_css_mini">Output CSS Minified</label>
-                  <textarea name="output_css_mini" id="output_css_mini" cols="160" rows="15"  onChange={(input) => setOutputCssMini(input.value)} value={outputCssMini}></textarea>
+                  <textarea name="output_css_mini" id="output_css_mini" cols="160" rows="9"  onChange={(input) => setOutputCssMini(input.value)} value={outputCssMini}></textarea>
               </form>
             </div>
         </div>

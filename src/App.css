@@ -198,7 +198,11 @@ form button:active{
 
 textarea {
   border-radius: 4px;
+  width: 90vw;
+  max-width: 1175px;
 }
+
+
 
 
 /*footer*/
